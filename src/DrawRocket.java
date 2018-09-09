@@ -7,8 +7,8 @@
  **/
 
 public class DrawRocket {
-    //class constant for you to use
-    private static final int SIZE = 3; // DO NOT REMOVE THIS LINE
+    //Make below variable a class constant used only by this class (DO NOT CHANGE THE NAME OF THE VARIABLE)
+    int SIZE = 3; // DO NOT REMOVE THIS LINE
 
     public static void main(String[] args) {
         //Remove this comment and below line and implement your code
