@@ -1,33 +1,27 @@
 public class StudentAdvanceTicket extends Ticket {
 
-    private int price;
+    private double price;
     private String id;
-    private int days;
 
-
-    StudentAdvanceTicket(String id, int days){
+    StudentAdvanceTicket(String id, int days){      // Constructor that takes the days purchased and assigns a price.
         this.id = id;
-        this.days = days;
-
-    }
-
-
-    public int getPrice(){
         if(days > 10 ){
-           this.price = 15;
+            this.price = DEFALTPRICE *(0.3);       // 70% discount
         }
         else{
-            this.price = 20;
+            this.price = DEFALTPRICE *(0.4);        //60% discount
         }
+    }
+
+    public double getPrice(){                          // Returns Price
         return price;
     }
 
-    public void printInfo(){
+    public void printInfo(){                        // Prints info.
         String info= "";
-        double d = (double) price;
         info += "Ticket Type: Student Advanced, ";
         info += "Number: " + id;
-        info += ", Price: " + d + "$ (ID required)";
+        info += ", Price: " + price + "$ (ID required)";
         System.out.println(info);
     }
 

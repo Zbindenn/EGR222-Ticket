@@ -1,22 +1,21 @@
 
 public class WalkupTicket extends Ticket {
 
-    private int price;
+    private double price;
     private String id;
 
 
-   WalkupTicket(String id){
-        this.price = 50;
+   WalkupTicket(String id){     // New Constructor.
+        this.price = DEFALTPRICE;
         this.id = id;
     }
 
 
-    public void printInfo(){
+    public void printInfo(){    // Prints Class info.
         String info= "";
-        double d = (double) price;
         info += "Ticket Type: Walk-up, ";
         info += "Number: " + id;
-        info += ", Price: " + d + "$";
+        info += ", Price: " + price + "$";
         System.out.println(info);
     }
 
