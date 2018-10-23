@@ -1,15 +1,17 @@
-public class Ticket {
-   private int price;
+public class Ticket {                       // Basic class that has three different constructors.
+
+   public static final double DEFALTPRICE= 50;
+   private double price;
    private String id;
 
 
     Ticket(){
-        this.price = 50;
+        this.price = DEFALTPRICE;
         this.id = "Empty";
     }
 
     Ticket(String id){
-        this.price = 50;
+        this.price = DEFALTPRICE;
         this.id = id;
     }
 
@@ -18,15 +20,14 @@ public class Ticket {
         this.price = price;
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return price;
     }
 
-    public void printInfo(){
+    public void printInfo(){                        //Prints the info of the class.
         String info= "";
-        double d = (double) price;
         info += "Number: " + id;
-        info += ", Price: " + d + "$";
+        info += ", Price: " + price + "$";
         System.out.println(info);
     }
 
