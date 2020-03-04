@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="mysql_connector_java_8_0_151" type="DTD" />
       <mapping pattern="Alamo defenders" type="PLAIN_TEXT" />
+      <mapping ext="bin" type="PLAIN_TEXT" />
       <mapping pattern="encodings" type="XML" />
     </extensionMap>
   </component>
